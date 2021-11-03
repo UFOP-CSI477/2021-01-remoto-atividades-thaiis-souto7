@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("./background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 38.5rem;
+    width: 81,5rem;
+}
+
+.container{
+    color: black;
+    font-family: 'Montserrat';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#counts{
+    margin: 0.4rem;
+    background-color: #969696;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    text-align: right;
+}
+
+h1{
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.calculator{
+    padding: 2rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 10%;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.formatting{
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: medium;
+    cursor: pointer;
+    background-color: #969696;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0.2rem;
+}
+.formatting:hover{
+    background-color: #323232;
+    color: white;
+}
+
+#_col{
+    width: 7.8rem;
+}

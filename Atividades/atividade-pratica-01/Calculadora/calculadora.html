@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="icon" href="./calculator.png">
+    <link href="./calculadora.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="./calculadora.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Calculadora</h1>
+            <p id="counts"></p>
+            <table>
+                <tr>
+                    <td colspan="2"><button class="formatting" id="_col" onclick="clearField()">AC</button></td>
+                    <td><button class="formatting" onclick="insertNE('.')">.</button></td>
+                    <td><button class="formatting" onclick="insertNE('*')">×</button></td>
+                </tr> 
+                <tr> 
+                    <td><button class="formatting" onclick="insertNE('7')">7</button></td>
+                    <td><button class="formatting" onclick="insertNE('8')">8</button></td>
+                    <td><button class="formatting" onclick="insertNE('9')">9</button></td>
+                    <td><button class="formatting" onclick="insertNE('+')">+</button></td>
+                </tr> 
+                <tr> 
+                    <td><button class="formatting" onclick="insertNE('4')">4</button></td>
+                    <td><button class="formatting" onclick="insertNE('5')">5</button></td>
+                    <td><button class="formatting" onclick="insertNE('6')">6</button></td>
+                    <td><button class="formatting" onclick="insertNE('-')">-</button></td>
+                </tr> 
+                <tr> 
+                    <td><button class="formatting" onclick="insertNE('1')">1</button></td>
+                    <td><button class="formatting" onclick="insertNE('2')">2</button></td>
+                    <td><button class="formatting" onclick="insertNE('3')">3</button></td>
+                    <td><button class="formatting" onclick="insertNE('/')">÷</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="formatting" id="_col" onclick="insertNE('0')">0</button></td>
+                    <td colspan="2"><button class="formatting" id="_col" onclick="equal()">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>
