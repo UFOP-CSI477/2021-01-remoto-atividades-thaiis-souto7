@@ -1,5 +1,3 @@
-
-
 function insertNE(n){
     var number = document.getElementById('counts').innerHTML
     document.getElementById('counts').innerHTML = number + n
