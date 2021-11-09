@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Moedas</title>
+    <link rel="icon" href="../imgs/moedas.png">
+    <link href="./moedas.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="./moedas.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="converter">
+            <div class="header">
+                <h1>Conversor</h1>
+                <button id="load" value="loadingCoins" onclick="loadingCoins(), loadingCoins2()">Carregar</button>
+            </div>
+            <div class="divisor"></div>
+            <h5>Valor:</h5>
+            <input type="text" name="value" id="formating">
+            <h5>Converter de: </h5>
+            <select name="key" id="selectcoin">
+                <option value="">Selecione: </option>
+            </select>
+            <h5>Para: </h5>
+            <select name="key" id="selectcoin2">
+                <option value="">Selecione: </option>
+            </select>
+            <div class="button">
+                <button id="go">Converter</button>
+            </div>
+            <h5>Data da cotação: 08/11/2021</h5>
+            <h5>Equivalência:</h5>
+        </div>
+    </div>
+</body>
