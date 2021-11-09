@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("./background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 38rem;
+  width: 81rem;
+}
+
+.container {
+  color: white;
+  font-family: "Montserrat";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.converter {
+  justify-content: center;
+  padding: 0rem 4rem 3rem 4rem;
+  padding-top: 2rem;
+  border-radius: 1rem;
+  position: absolute;
+  width: 13.5rem;
+  top: 5%;
+  background-color: rgba(160, 99, 61, 0.95);
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.divisor {
+  height: 0.09rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  background-color: #f7c6a8;
+}
+
+#formating {
+  padding-left: 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  width: 13rem;
+  height: 1.5rem;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+
+#selectcoin {
+  font-family: "Montserrat";
+  padding-left: 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  width: 13.6rem;
+  height: 1.7rem;
+  font-weight: bold;
+}
+
+#selectcoin2 {
+    font-family: "Montserrat";
+    padding-left: 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    width: 13.6rem;
+    height: 1.7rem;
+    font-weight: bold;
+  }
+
+.button {
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#go {
+  background-color: #f7c6a8;
+  border: none;
+  border-radius: 0.5rem;
+  width: 8rem;
+  height: 2rem;
+  font-weight: bold;
+  color: rgb(160, 99, 61);
+  font-size: 0.85rem;
+}
+
+#load{
+  align-items: center;
+  background-color: rgb(0,0,0,0);
+  border: none;
+  color: white;
+  font-size: 0.8rem;
+}
+
+#load:hover{
+  color:black;
+} 

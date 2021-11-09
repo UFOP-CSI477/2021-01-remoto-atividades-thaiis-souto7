@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Controle de PIX</title>
+    <link rel="icon" href="../imgs/pix.png">
+    <link href="./pix.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="./pix.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="pix">
+            <div class="fields">
+                <h2>Chave Pix</h2>
+                <div class="divisor"></div>
+                <div class="options">
+                    <button id="option">Pagar</button>
+                    <button id="option">Receber</button>
+                </div>
+                <div class="text">
+                    <h6>Tipo de Chave:</h6>
+                    <select name="key" id="key">
+                        <option value="CPF">CPF</option>
+                        <option value="CNPJ">CNPJ</option>
+                        <option value="Email">Email</option>
+                        <option value="Celular">Celular</option>
+                        <option value="Chave Aleatória">Chave Aleatória</option>
+                    </select>
+                    <input type="text" name="keyvalue" id="keyvalue">
+                    <h6>Valor:</h6>
+                    <input type="text" name="value" id="keyvalue">
+                    <h6>Data:</h6>
+                    <input type="date" name="date" id="keyvalue">
+                    <h6>Banco: <button id="load" value="loadingBanks" onclick="loadingBanks()"> Carregar Bancos </button></h6>
+                    <select name="bank" id="keyvaluebank">
+                        <option value="">Selecione: </option>
+                    </select>
+                    
+                    
+                    <!-- <input type="radio" name="selection" id="CPF" value="CPF">
+                    <label for="CPF" id="label_text">CPF</label><br>
+                    <input type="radio" name="selection" id="CNPJ" value="CNPJ">
+                    <label for="CNPJ" id="label_text">CNPJ</label><br>
+                    <input type="radio" name="selection" id="Email" value="Email">
+                    <label for="Email" id="label_text">Email</label><br>
+                    <input type="radio" name="selection" id="Celular" value="Celular">
+                    <label for="Celular" id="label_text">Celular</label><br>
+                    <input type="radio" name="selection" id="chave_aleatoria" value="chave_aleatoria">
+                    <label for="chave_aleatoria" id="label_text">Chave Aleatória</label> -->
+                </div>
+            </div>
+
+            <div class="button">
+                <button id="continue"><a href="./transactions.html">Continuar</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
