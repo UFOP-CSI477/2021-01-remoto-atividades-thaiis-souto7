@@ -10,10 +10,6 @@ export const ContactContainer = styled.div`
     flex-direction: column;
     color: #393939;
     background-color: #F5F7FA;
-
-    @media (max-width: 768px){
-        padding-bottom: 20rem;
-    }
 `;
 
 export const InfoContact = styled.div`

@@ -5,6 +5,7 @@ import { AboutUs } from "../src/components/AboutUs";
 import { Planning } from "../src/components/Planning";
 import { Partners } from "../src/components/Partners";
 import { Contact } from "../src/components/Contact";
+import { Footer } from "../src/components/Footer";
 
 import { GlobalStyles } from './styles/global';
 
@@ -19,6 +20,7 @@ export function App() {
       <Partners />
       <Contact />
       <GlobalStyles />
+      <Footer />
       </>
   );
 }

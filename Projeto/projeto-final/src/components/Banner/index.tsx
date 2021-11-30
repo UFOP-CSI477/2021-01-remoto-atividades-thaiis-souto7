@@ -17,7 +17,9 @@ export function Banner() {
       </BannerText>
       <BodyButton>
         <ButtonPers>
-          <h4>FAÇA UMA COTAÇÃO PELO WHATSAPP</h4>
+          <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5531994680027">
+            <h4>FAÇA UMA COTAÇÃO PELO WHATSAPP</h4>
+          </a>
         </ButtonPers>
       </BodyButton>
     </BannerContainer>
