@@ -3,7 +3,6 @@
 
 --------------
 
-
 ### Resumo
 
   Este trabalho irá descrever o tema proposto para o trabalho final da
