@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("./background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 38rem;
+  width: 79rem;
+}
+
+.container {
+  color: white;
+  font-family: "Montserrat";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pix {
+  padding: 0rem 4rem 3rem 4rem;
+  padding-top: 2rem;
+  border-radius: 1rem;
+  position: absolute;
+  width: 13.5rem;
+  top: 5%;
+  background-color: rgb(38, 63, 63, 0.95);
+}
+
+h2 {
+  text-align: center;
+}
+h6 {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+.divisor {
+  height: 0.09rem;
+  margin-bottom: 1rem;
+  border: none;
+  background-color: darkseagreen;
+}
+
+.button {
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#option {
+  background-color: darkseagreen;
+  border: none;
+  border-radius: 0.5rem;
+  width: 6rem;
+  height: 3rem;
+  font-weight: bold;
+  color: #263f3f;
+  font-size: 0.85rem;
+  margin: 0.3rem;
+}
+
+#continue {
+  background-color: darkseagreen;
+  border: none;
+  border-radius: 0.5rem;
+  width: 8rem;
+  height: 2rem;
+  font-weight: bold;
+  color: #263f3f;
+  font-size: 0.85rem;
+}
+
+#key {
+  font-family: "Montserrat";
+  padding-left: 0.5rem;
+  margin-left: 1rem;
+  margin-bottom: 0.8rem;
+  border: none;
+  border-radius: 0.3rem;
+  width: 12rem;
+  height: 1.5rem;
+  font-weight: bold;
+}
+
+#keyvalue {
+  padding-left: 0.5rem;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  width: 11.75rem;
+  height: 1.5rem;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+
+#keyvaluebank {
+  padding-left: 0.5rem;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  width: 11.75rem;
+  height: 1.5rem;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+
+#load{
+  background-color: rgb(0,0,0,0);
+  border: none;
+  color: white;
+  font-size: 0.8rem;
+}
+
+#load:hover{
+  color:green;
+}

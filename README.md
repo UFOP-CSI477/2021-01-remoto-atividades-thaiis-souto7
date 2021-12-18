@@ -8,6 +8,10 @@
 - Semestre/Ano correntes: 6ºsemestre/2021
 - Link para o seu GitHub: https://github.com/thaiis-souto7
 
+## Observações: 
+
+Exercícios de Aula estão sendo feitos na branch **dev**
+
 ## [Projeto final:](./Projeto/README.md) 
 
 **Site para empresa de Proteção Veicular**
