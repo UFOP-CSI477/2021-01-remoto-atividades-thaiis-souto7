@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Cadastro>
+    <Identificacao>CADASTRO001</Identificacao>
+    <DataGeracao>27/11/2020</DataGeracao>
+    <Fundo>
+        <CNPJ>35.705.695/0001-91</CNPJ>
+        <Nome>PRECATO I FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS - NAO PADRONIZADOS</Nome>
+    </Fundo>
+   <Agentes>
+      <Agente>
+        <TipoAgente>3</TipoAgente>
+        <DescricaoAgente>Cedente</DescricaoAgente>
+        <DadosBasicos>
+            <TipoPessoaMF>F</TipoPessoaMF>
+            <CPFCNPJ>000.000.000-00</CPFCNPJ>
+            <Nome>NOME</Nome>
+            <DataNascimento>00/00/0000</DataNascimento>
+        </DadosBasicos>
+      </Agente>
+   </Agentes>
+</Cadastro>

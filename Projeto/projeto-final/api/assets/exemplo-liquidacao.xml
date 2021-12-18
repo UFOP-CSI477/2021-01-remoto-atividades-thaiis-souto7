@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Remessa>
+    <Identificacao>LAYOUT003</Identificacao>
+    <DataGeracao>15/07/2021</DataGeracao>
+    <Fundo>
+        <CNPJ>35.705.695/0001-91</CNPJ>
+        <Nome>PRECATO I FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS - NAO PADRONIZADOS</Nome>
+    </Fundo>
+    <CNPJCustodiante>22.610.500/0001-88</CNPJCustodiante>
+    <Liquidacoes>
+        <Liquidacao>
+            <Cedente>
+                <TipoPessoaMF>F</TipoPessoaMF>
+                <CPFCNPJ>000.000.000-00</CPFCNPJ>
+                <Nome>NOME DO CEDENTE</Nome>
+                <Titulos>
+                    <Titulo>
+                        <TipoAtivo></TipoAtivo>
+                        <NumeroTitulo></NumeroTitulo>
+                        <NumeroControleParticipante>00000000000000000000</NumeroControleParticipante>
+                        <NumeroDocumento>000.000.000-00</NumeroDocumento>
+                        <CMC7></CMC7>
+                        <DataVencimento>30/06/2023</DataVencimento>
+                        <ValorNominal>00000.00</ValorNominal>
+                        <FormaLiquidacao>01</FormaLiquidacao>
+                        <DataLiquidacao>15/07/2020</DataLiquidacao>
+                        <ValorLiquidacao>00000.00</ValorLiquidacao>
+                        <ValorResidual>00000.00</ValorResidual>
+                        <Sacado>
+                            <TipoPessoaMF>J</TipoPessoaMF>
+                            <CPFCNPJ>00.000.000/0000-00</CPFCNPJ>
+                            <Nome>ENTE DEVEDOR</Nome>
+                        </Sacado>
+                    </Titulo>
+                </Titulos>
+            </Cedente>
+        </Liquidacao>
+    </Liquidacoes>
+</Remessa>
