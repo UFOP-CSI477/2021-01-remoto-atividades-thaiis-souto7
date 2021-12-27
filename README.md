@@ -10,7 +10,7 @@
 
 ## Observações: 
 
-Exercícios de Aula estão sendo feitos na branch **dev**
+Exercícios de Aula estão sendo feitos na branch **master**
 
 ## [Projeto final:](./Projeto/README.md) 
 
