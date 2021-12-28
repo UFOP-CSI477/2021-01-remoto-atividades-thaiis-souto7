@@ -24,7 +24,7 @@
         </div>
 
         
-        <form class="cadastro" action="post" name="frmDados" id="formulario">
+        <form class="cadastro" action="validar.php" method="post" name="frmDados" id="formulario">
             <h2>Formulário de Cadastro:</h2>
             <div class="form-group" id="campos">
                 <label for="nome">Nome:</label>
@@ -51,9 +51,9 @@
                 <input type="text" value="" name="cep" id="cep" class="form-control cep-mask" placeholder="00000-000">
             </div>
             <div class="botoes">
-                <input type="reset" value="Limpar" class="btn btn-danger">
+                <input type="reset" value="Limpar" class="btn btn-danger" name="btnLimpar">
                 <input type="button" value="Carregar" class="btn btn-warning" onclick="dadosForm()">
-                <input type="submit" value="Cadastrar" class="btn btn-success">
+                <input type="submit" value="Cadastrar" class="btn btn-success" name="btnCad">
             </div>
         </form>
         
