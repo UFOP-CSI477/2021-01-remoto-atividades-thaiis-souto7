@@ -25,48 +25,33 @@
     <div class="formulario">
         <form class="cadastro" method="get" action="cad_pessoas.html">
             <h2>Formulário de Cadastro:</h2>
-            <div id="campos">
+            <div class="form-group" id="campos">
                 <label for="nome">Nome:</label>
-                <input class="i-text" type="text" name="nome" id="nome" placeholder="Digite seu nome aqui">
+                <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu nome aqui">
             </div>
-            <div id="campos">
+            <div class="form-group" id="campos">
                 <label for="cpf">CPF:</label>
-                <input class="i-text" type="text" name="cpf" id="cpf" class="form-control cpf-mask"
+                <input type="text" name="cpf" id="cpf" class="form-control cpf-mask"
                     placeholder="000.000.000-00">
             </div>
-            <div id="campos">
+            <div class="form-group" id="campos">
                 <label for="email">E-mail:</label>
-                <input class="i-text" type="text" name="email" id="email" placeholder="Digite seu e-mail aqui">
+                <input class="form-control" type="text" name="email" id="email" placeholder="Digite seu e-mail aqui">
             </div>
-            <div id="campos">
-                <label for="data_nasc">Data Nasc.:</label>
-                <input class="i-text" type="date" name="data_nasc" id="data_nasc">
-            </div>
-            <div id="campos">
+
+            <div class="form-group" id="campos">
                 <label for="telefone">Telefone:</label>
-                <input class="i-text" type="tel" name="telefone" id="telefone" class="form-control cel-sp-mask"
+                <input type="tel" name="telefone" id="telefone" class="form-control cel-sp-mask"
                     placeholder="(00) 00000-0000">
             </div>
 
-            <div id="campos">
-                <label for="rua">Rua:</label>
-                <input class="i-text" type="text" name="rua" id="rua" placeholder="Rua - Nº">
-            </div>
-            <div id="campos">
-                <label for="cidade">Cidade:</label>
-                <input class="i-text" type="text" name="cidade" id="cidade" placeholder="Digite a cidade">
-            </div>
-            <div id="campos">
-                <label for="estado">Estado:</label>
-                <input class="i-text" type="text" name="estado" id="estado" placeholder="Digite o estado">
-            </div>
-            <div id="campos">
+            <div class="form-group" id="campos">
                 <label for="telefone">CEP:</label>
-                <input class="i-text" type="text" name="cep" id="cep" class="form-control cep-mask" placeholder="00000-000">
+                <input type="text" name="cep" id="cep" class="form-control cep-mask" placeholder="00000-000">
             </div>
             <div class="botoes">
-                <input id="botoes" type="submit" value="Cadastrar">
-                <input id="botoes" type="reset" value="Limpar">
+                <input type="reset" value="Limpar" class="btn btn-danger">
+                <input type="submit" value="Cadastrar" class="btn btn-success">
             </div>
         </form>
     </div>

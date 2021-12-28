@@ -27,3 +27,23 @@ a:hover{
     vertical-align: text-bottom;
     width: 3rem;
 }
+
+.row{
+    background-color: #e2e2e4;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin: 3rem;
+    text-align: center;
+}
+
+h4{
+    color: #404A70;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+p{ 
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    text-align: justify;
+}

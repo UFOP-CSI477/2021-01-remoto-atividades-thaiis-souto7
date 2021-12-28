@@ -11,7 +11,7 @@ body{
     background-color: #e2e2e4;
 }
 
-.tabela{
+#tabela{
     display: flex;
     justify-content: center;
     margin-top: 3rem;
@@ -55,8 +55,4 @@ th {
 td{
     border: 1px solid #404A70;
     background-color: #e2e2e4;
-}
-
-tbody td:hover{
-    background-color: #A4A9BD;
 }

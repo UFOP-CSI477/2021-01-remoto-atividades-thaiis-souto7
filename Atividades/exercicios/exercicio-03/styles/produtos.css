@@ -11,6 +11,14 @@ body{
     background-color: #e2e2e4;
 }
 
+.container-fluid{
+    background-color: #626570;
+    padding: 2rem;
+    color: #e2e2e4;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 a{
     color: #404A70;
     font-family: Arial, Helvetica, sans-serif;
@@ -26,4 +34,24 @@ a:hover{
 #img{
     vertical-align: text-bottom;
     width: 3rem;
+}
+
+#cafe{
+    width: 15rem;
+    border-radius: 3rem;
+}
+
+#leite{
+    width: 15rem;
+    border-radius: 3rem;
+}
+
+#cana{
+    width: 15rem;
+    border-radius: 3rem;
+}
+
+#peixe{
+    width: 15rem;
+    border-radius: 3rem;
 }

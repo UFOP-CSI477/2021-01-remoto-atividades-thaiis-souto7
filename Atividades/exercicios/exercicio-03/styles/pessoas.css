@@ -11,13 +11,6 @@ body{
     background-color: #e2e2e4;
 }
 
-.i-text{
-    height: 1.3rem;
-    width: 15rem;
-    border: 1px solid #404A70;
-    border-radius: 0.2rem;
-}
-
 h2{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
@@ -25,9 +18,13 @@ h2{
 }
 
 .formulario{
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
+}
+
+.form-group{
+    margin: 0;
 }
 
 .cadastro{
@@ -89,38 +86,42 @@ a:hover{
 }
 
 #nome {
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
     padding-left: 0.5rem;
+    height: 1.3rem;
+    width: 15rem;
+    border: 1px solid #404A70;
+    border-radius: 0.2rem;
 }
 #cpf {
-    margin-left: 3.5rem;
+    /* margin-left: 3.5rem; */
     padding-left: 0.5rem;
+    height: 1.3rem;
+    width: 15rem;
+    border: 1px solid #404A70;
+    border-radius: 0.2rem;
 }
 #email {
-    margin-left: 2.8rem;
+    /* margin-left: 2.8rem; */
     padding-left: 0.5rem;
-}
-#data_nasc {
-    margin-left: 1.2rem;
-    padding-left: 0.5rem;
+    height: 1.3rem;
+    width: 15rem;
+    border: 1px solid #404A70;
+    border-radius: 0.2rem;
 }
 #telefone {
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     padding-left: 0.5rem;
-}
-#rua {
-    margin-left: 3.7rem;
-    padding-left: 0.5rem;
-}
-#cidade {
-    margin-left: 2.6rem;
-    padding-left: 0.5rem;
-}
-#estado {
-    margin-left: 2.6rem;
-    padding-left: 0.5rem;
+    height: 1.3rem;
+    width: 15rem;
+    border: 1px solid #404A70;
+    border-radius: 0.2rem;
 }
 #cep {
-    margin-left: 3.5rem;
+    /* margin-left: 3.5rem; */
     padding-left: 0.5rem;
+    height: 1.3rem;
+    width: 15rem;
+    border: 1px solid #404A70;
+    border-radius: 0.2rem;
 }
