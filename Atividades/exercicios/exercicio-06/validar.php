@@ -1,14 +1,10 @@
 <?php
 
-    // echo "POST";
-    // var_dump($_POST);
-
     $nome = $_POST['nome'];
     $cpf = $_POST['cpf'];
     $email = $_POST['email'];
     $telefone = $_POST['telefone'];
     $cep = $_POST['cep'];
-
 
     //Controller
     if ($nome != "" && $cpf != "" && $email != "" && $telefone != "" && $cep != ""){
