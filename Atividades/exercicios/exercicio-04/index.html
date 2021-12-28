@@ -30,6 +30,30 @@
             <input type="button" id="botoes" value="Reiniciar" onclick="Reiniciar()">
         </div>
 
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h4>Estados: </h4>
+                    <select class="locais" name="estados" id="estados" onchange="loadCities()">
+                        <option value=""> Selecione: </option>
+                    </select>
+                    
+                </div>
+            
+                <div class="col-4">
+                    <h4>Cidades: </h4>
+                    <select class="locais" name="cidades" id="cidades">
+                        <option value=""> Selecione: </option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <input type="button" id="botoes" value="Carregar" onclick="loadStates()">
+                </div>
+                
+            </div>
+        </div>
+
+        <script src="./api.js"></script>
         
     </body>
 </html>

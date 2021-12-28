@@ -50,3 +50,14 @@ a:hover{
     vertical-align: text-bottom;
     width: 3rem;
 }
+
+.locais{
+    background-color: #A4A9BD;
+    color: #404A70;
+    width: 15rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    padding-left: 0.5rem;
+    border-style: dotted;
+    border-color: #404A70;
+}
