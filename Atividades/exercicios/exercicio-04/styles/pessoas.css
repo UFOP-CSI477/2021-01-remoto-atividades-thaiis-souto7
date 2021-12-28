@@ -1,6 +1,7 @@
 body{ 
     background-color: #A4A9BD;
     margin: 0;
+
 }
 
 .navbar{
@@ -17,8 +18,8 @@ h2{
     color: #e2e2e4;
 }
 
-.formulario{
-    margin-top: 2rem;
+#formulario{
+    margin: 2rem 0rem 0rem 30rem;
     display: flex;
     justify-content: center;
 }
