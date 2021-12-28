@@ -7,21 +7,38 @@ function User(nome, cpf, email, telefone, cep){
 }
 
 function dadosForm(){
-    const nome = document.frmDados.nome.value;
-    const cpf = document.frmDados.cpf.value;
-    const email = document.frmDados.email.value;
-    const telefone = document.frmDados.telefone.value;
-    const cep = document.frmDados.cep.value;
+    const nome = document.frmDados.nome;
+    const cpf = document.frmDados.cpf;
+    const email = document.frmDados.email;
+    const telefone = document.frmDados.telefone;
+    const cep = document.frmDados.cep;
 
-    const user = new User(nome, cpf, email, telefone, cep)
-    console.log(user)
+    if (Validar(nome) && Validar(cpf) && Validar(email) && Validar(telefone) && Validar(cep)){
 
-    window.alert(`Dados carregados com sucesso! 
+        const user = new User(nome, cpf, email, telefone, cep)
+
+        window.alert(`Dados carregados com sucesso! 
     
-        Nome: ${nome}; 
-        CPF: ${cpf}; 
-        Email ${email}; 
-        Tel: ${telefone}; 
-        CEP: ${cep}
-    `)
+            Nome: ${nome.value}; 
+            CPF: ${cpf.value}; 
+            Email ${email.value}; 
+            Tel: ${telefone.value}; 
+            CEP: ${cep.value}
+        `)
+    }
+    
+}
+
+function Validar(campo){
+
+    let n = campo.value;
+
+    if( n.length == "" || n.length == 0 ){
+        window.alert("Valor Incorreto!")
+        campo.value = ""
+        campo.focus()
+        return false;
+    }
+
+    return true
 }
