@@ -24,9 +24,8 @@ class ProdutoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
+    public function create() {
+        return view('produtos.create');
     }
 
     /**
@@ -35,9 +34,15 @@ class ProdutoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
+    public function store(Request $request) {
+        // $produto = new Produto;
+        // $produto->nome = $request->nome;
+        // $produto->um = $request->um;
+        // $produto->save();
+
+        Produto::create($request->all());
+        session()->flash('mensagem', 'Produto cadastrado com sucesso!');
+        return redirect()->route('produtos.index');
     }
 
     /**
@@ -46,9 +51,9 @@ class ProdutoController extends Controller
      * @param  \App\Models\Produto  $produto
      * @return \Illuminate\Http\Response
      */
-    public function show(Produto $produto)
-    {
-        //
+    public function show(Produto $produto){
+        
+        return view('produtos.show', ['produto' => $produto]);
     }
 
     /**
@@ -57,9 +62,8 @@ class ProdutoController extends Controller
      * @param  \App\Models\Produto  $produto
      * @return \Illuminate\Http\Response
      */
-    public function edit(Produto $produto)
-    {
-        //
+    public function edit(Produto $produto) {
+        return view('produtos.edit', ['produto' => $produto]);
     }
 
     /**
@@ -69,9 +73,11 @@ class ProdutoController extends Controller
      * @param  \App\Models\Produto  $produto
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Produto $produto)
-    {
-        //
+    public function update(Request $request, Produto $produto){
+        $produto->fill($request->all());
+        $produto->save();
+        session()->flash('mensagem', 'Produto atualizado com sucesso!');
+        return redirect()->route('produtos.index');
     }
 
     /**
@@ -80,8 +86,9 @@ class ProdutoController extends Controller
      * @param  \App\Models\Produto  $produto
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Produto $produto)
-    {
-        //
+    public function destroy(Produto $produto){
+        $produto->delete();
+        session()->flash('mensagem', 'Produto excluído com sucesso!');
+        return redirect()->route('produtos.index');
     }
 }

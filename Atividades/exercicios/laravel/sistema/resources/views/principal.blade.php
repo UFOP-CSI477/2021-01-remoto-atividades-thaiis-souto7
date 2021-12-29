@@ -40,7 +40,13 @@
                 <li class="nav-item"><a class="nav-link" href="/cidades">Cidades</a></li>
                 <li class="nav-item"><a class="nav-link" ref="/vendas">Vendas</a></li>
 
-                        
+        @if(session('mensagem'))
+
+            <div class="alert alert-success">
+                {{ session('mensagem') }}
+            </div>
+
+        @endif
 
         <!-- https://laravel.com/docs/8.x/blade#defining-a-layout //-->
         <!-- CONTEUDO DA PAGINA //-->
