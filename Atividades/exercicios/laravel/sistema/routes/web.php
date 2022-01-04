@@ -14,13 +14,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Models\Produto;
+use App\Models\Estado;
+use App\Models\Cidade;
 use App\Http\Controllers\ProdutoController;
+use App\Http\Controllers\EstadoController;
+use App\Http\Controllers\CidadeController;
+
 
 Route::get('/', function () {
     return view('principal');
 })->name('principal');
 
 Route::resource('/produtos', ProdutoController::class);
+Route::resource('/estados', EstadoController::class);
+Route::resource('/cidades', CidadeController::class);
 
 // Route::get('/ola', function() {
 //     return 'Olá Mundo!';
