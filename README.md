@@ -2,10 +2,10 @@
 
 ## Atualize os seus dados:
 
-- Nome:Thaís Souto Damasceno
+- Nome: Thaís Souto Damasceno
 - Matrícula: 18.2.8013
 - Curso: Sistemas de Informação
-- Semestre/Ano correntes: 6ºsemestre/2021
+- Semestre/Ano correntes: 6º semestre/2021
 - Link para o seu GitHub: https://github.com/thaiis-souto7
 
 ## Observações: 
