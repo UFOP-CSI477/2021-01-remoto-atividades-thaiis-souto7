@@ -18,7 +18,7 @@ class PessoaFactory extends Factory
             'bairro' => $this->faker->lexify('????????????????????'),
             'cidade' => $this->faker->city,
             'estado' => $this->faker->state,
-            'dat_nasc' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
+            'dat_nasc' => $this->faker->date($format = 'Y-m-d'),
             'cpf' => $this->faker->lexify('???????????')
         ];
     }

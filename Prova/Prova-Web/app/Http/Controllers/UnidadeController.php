@@ -26,7 +26,7 @@ class UnidadeController extends Controller
      */
     public function create()
     {
-        //
+        return view('unidades.create');
     }
 
     /**
@@ -37,7 +37,9 @@ class UnidadeController extends Controller
      */
     public function store(StoreUnidadeRequest $request)
     {
-        //
+        Unidade::create($request->all());
+        session()->flash('mensagem', 'Unidade cadastrada com sucesso!');
+        return redirect()->route('unidades.index');
     }
 
     /**
@@ -48,7 +50,7 @@ class UnidadeController extends Controller
      */
     public function show(Unidade $unidade)
     {
-        //
+        return view('unidades.show', ['unidade' => $unidade]);
     }
 
     /**
@@ -59,7 +61,7 @@ class UnidadeController extends Controller
      */
     public function edit(Unidade $unidade)
     {
-        //
+        return view('unidades.edit', ['unidade' => $unidade]);
     }
 
     /**
@@ -71,7 +73,10 @@ class UnidadeController extends Controller
      */
     public function update(UpdateUnidadeRequest $request, Unidade $unidade)
     {
-        //
+        $unidade->fill($request->all());
+        $unidade->save();
+        session()->flash('mensagem', 'Unidade atualizada com sucesso!');
+        return redirect()->route('unidades.index');
     }
 
     /**
@@ -82,6 +87,8 @@ class UnidadeController extends Controller
      */
     public function destroy(Unidade $unidade)
     {
-        //
+        $unidade->delete();
+        session()->flash('mensagem', 'Unidade excluída com sucesso!');
+        return redirect()->route('unidades.index');
     }
 }

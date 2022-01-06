@@ -5,9 +5,14 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreRegistroRequest;
 use App\Http\Requests\UpdateRegistroRequest;
 use App\Models\Registro;
+use App\Models\Pessoa;
+use App\Models\Unidade;
+use App\Models\Vacina;
+use Session;
 
 class RegistroController extends Controller
 {
+    
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +20,7 @@ class RegistroController extends Controller
      */
     public function index()
     {
-        $registros = Registro::orderBy('dose')->get();
+        $registros = Registro::all();
         return view('registros.index', ['registros' => $registros]);
     }
 
@@ -26,7 +31,10 @@ class RegistroController extends Controller
      */
     public function create()
     {
-        //
+        $pessoas = Pessoa::all();
+        $unidades = Unidade::all();
+        $vacinas = Vacina::all();
+        return view('registros.create', ['pessoas' => $pessoas, 'unidades' => $unidades, 'vacinas' => $vacinas]);
     }
 
     /**
@@ -37,9 +45,31 @@ class RegistroController extends Controller
      */
     public function store(StoreRegistroRequest $request)
     {
-        //
-    }
 
+        $pessoa_id = $_POST['pessoa_id'];
+        $unidade_id = $_POST['unidade_id'];
+        $vacina_id = $_POST['vacina_id'];
+        $dose = $_POST['dose'];
+        $dat_aplic = $_POST['dat_aplic'];
+        
+        if (empty($dose) || empty($dat_aplic) || empty($pessoa_id) || empty($unidade_id) || empty($vacina_id)) {
+            Session::flash('message', 'Inválido!!!'); 
+            Session::flash('alert-class', 'alert-danger'); 
+            return back();
+        }else{
+            Registro::create([
+                'dose' => $dose, 
+                'dat_aplic' => $dat_aplic,
+                'pessoa_id' => $pessoa_id, 
+                'unidade_id' => $unidade_id, 
+                'vacina_id' => $vacina_id
+            ]);
+
+            Session::flash('message', 'Registro criado com sucesso!');
+            Session::flash('alert-class', 'alert-success'); 
+            return edirect()->route('unidades.index');
+        }
+    }
     /**
      * Display the specified resource.
      *
@@ -48,7 +78,7 @@ class RegistroController extends Controller
      */
     public function show(Registro $registro)
     {
-        //
+        return view('registros.show', ['registro' => $registro]);
     }
 
     /**
@@ -59,7 +89,11 @@ class RegistroController extends Controller
      */
     public function edit(Registro $registro)
     {
-        //
+        $pessoas = Pessoa::all();
+        $unidades = Unidade::all();
+        $vacinas = Vacina::all();
+        return view('registros.edit',
+            ['registro' => $registro]);
     }
 
     /**
@@ -71,7 +105,30 @@ class RegistroController extends Controller
      */
     public function update(UpdateRegistroRequest $request, Registro $registro)
     {
-        //
+        $dose = $_POST['dose'];
+        $dat_aplic = $_POST['dat_aplic'];
+
+        $pessoa_id = $_POST['pessoa_id'];
+        $unidade_id = $_POST['unidade_id'];
+        $vacina_id = $_POST['vacina_id'];
+
+        if (empty($dose) || empty($dat_aplic) || empty($pessoa_id) || empty($unidade_id) || empty($vacina_id)){
+            Session::flash('message', 'Inválido!!!'); 
+            Session::flash('alert-class', 'alert-danger'); 
+            return back();
+        }else{
+            $registro->dose = $dose;
+            $registro->dat_aplic = $dat_aplic;
+            $registro->pessoa_id = $pessoa_id;
+            $registro->unidade_id = $unidade_id;
+            $registro->vacina_id = $vacina_id;
+            
+            $registro->update();
+
+            Session::flash('message', 'Registro atualizado com sucesso!');
+            Session::flash('alert-class', 'alert-success'); 
+            return redirect('registros');
+        }
     }
 
     /**
@@ -82,6 +139,8 @@ class RegistroController extends Controller
      */
     public function destroy(Registro $registro)
     {
-        //
+        $registro->delete();
+        session()->flash('mensagem', 'Registro excluído com sucesso!');
+        return redirect()->route('registros.index');
     }
 }

@@ -26,7 +26,7 @@ class PessoaController extends Controller
      */
     public function create()
     {
-        //
+        return view('pessoas.create');
     }
 
     /**
@@ -37,7 +37,9 @@ class PessoaController extends Controller
      */
     public function store(StorePessoaRequest $request)
     {
-        //
+        Pessoa::create($request->all());
+        session()->flash('mensagem', 'Pessoa cadastrada com sucesso!');
+        return redirect()->route('pessoas.index');
     }
 
     /**
@@ -48,7 +50,7 @@ class PessoaController extends Controller
      */
     public function show(Pessoa $pessoa)
     {
-        //
+        return view('pessoas.show', ['pessoa' => $pessoa]);
     }
 
     /**
@@ -59,7 +61,7 @@ class PessoaController extends Controller
      */
     public function edit(Pessoa $pessoa)
     {
-        //
+        return view('pessoas.edit', ['pessoa' => $pessoa]);
     }
 
     /**
@@ -71,7 +73,10 @@ class PessoaController extends Controller
      */
     public function update(UpdatePessoaRequest $request, Pessoa $pessoa)
     {
-        //
+        $pessoa->fill($request->all());
+        $pessoa->save();
+        session()->flash('mensagem', 'Pessoa atualizada com sucesso!');
+        return redirect()->route('pessoas.index');
     }
 
     /**
@@ -82,6 +87,8 @@ class PessoaController extends Controller
      */
     public function destroy(Pessoa $pessoa)
     {
-        //
+        $pessoa->delete();
+        session()->flash('mensagem', 'Pessoa excluída com sucesso!');
+        return redirect()->route('pessoas.index');
     }
 }

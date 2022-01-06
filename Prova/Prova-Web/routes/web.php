@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('principal');
 });
 
+Route::get('/geral', function () {
+    return view('geral');
+});
+
 Route::resource('/pessoas', PessoaController::class);
 Route::resource('/registros', RegistroController::class);
 Route::resource('/unidades', UnidadeController::class);

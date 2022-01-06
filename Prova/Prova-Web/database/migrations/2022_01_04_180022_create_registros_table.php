@@ -21,6 +21,21 @@ class CreateRegistrosTable extends Migration
             $table->integer('dose');
             $table->date('dat_aplic');
             $table->timestamps();
+
+
+            $table->foreign('pessoa_id')
+                ->references('id')
+                ->on('pessoas');
+
+            $table->foreign('unidade_id')
+                ->references('id')
+                ->on('unidades');
+
+            $table->foreign('vacina_id')
+                ->references('id')
+                ->on('vacinas');
+
+                
         });
     }
 
